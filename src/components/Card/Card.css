@@ -1,0 +1,70 @@
+.card {
+    width: 200px;
+    height: 350px;
+    padding: 5px;
+    margin: 10px;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.721);
+}
+
+.posterdiv {
+    overflow: hidden;
+}
+
+.poster {
+    transition: transform 500ms ease-out;
+    border-radius: 5px;
+}
+
+.poster:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px 2px;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2px;
+    padding-bottom: 3px;
+}
+
+.media_type {
+    /* height: fit-content; */
+    font-size: 14px;
+    padding: 0px 3px;
+    border-radius: 5px;
+    background-color: rgb(236, 12, 12);
+}
+
+.date {
+    color: #cdcdcd;
+}
+
+@media screen and (max-width: 860px) {
+    .card {
+        /* width: 46vw; */
+        margin: 7px 5px;
+    }
+}
+
+/* fix bug in tab screens */
+@media screen and (max-width: 630px) {
+    .card {
+        width: 46vw;
+        margin: 7px 0px;
+    }
+}
